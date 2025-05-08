@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Nunito Light';
   font-style: normal;
@@ -20,8 +19,6 @@
   src: local(''),
   url(../fonts/Nunito-BoldItalic.ttf) format('truetype');
 }
-
-
 * { font-family: 'Nunito Light', sans-serif; }
 html { font-size: 62.5%; }
 body {
@@ -30,14 +27,11 @@ body {
   padding: 2rem;
   max-width: 1600px;
 }
-
 ul {
   padding-left: 1em;
   list-style: circle;
 }
 ul > li::marker { font-size: 1.2em; }
-
-
 @media (prefers-color-scheme: light) {
   body {
       background-color: white;
@@ -50,7 +44,6 @@ ul > li::marker { font-size: 1.2em; }
       color: white;
   }
 }
-
 .grid-container-col-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -60,16 +53,9 @@ ul > li::marker { font-size: 1.2em; }
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
 }
-
-/* https://www.youtube.com/watch?v=rg7Fvvl3taU */
-/* @media (min-width: 40em) { 26:56 min.} */
-
 .grid-col-span-4 { grid-column: span 4; }
-
 .logo-container {
   position: relative;
-  /* border: 2px solid greenyellow;
-  border-radius: 5px; */
   height: 9rem;
 }
 .logo-text {
@@ -77,8 +63,6 @@ ul > li::marker { font-size: 1.2em; }
   top: .85em;
   left: .5em;
   margin: 0;
-
-  /* font-weight: lighter; */
   font-family: 'Nunito Bold Italic';
   font-style: italic;
   font-size: 2.4rem;
@@ -88,43 +72,30 @@ ul > li::marker { font-size: 1.2em; }
   position: absolute;
   left: 0;
   right: 0;
-  
   min-height: 100%;
-  
-  background: 
-    linear-gradient(to top, #0000ff, #3399ff, #33ccff, #33ffcc);
-
+  background: linear-gradient(to top, #0000ff, #3399ff, #33ccff, #33ffcc);
   mask-image: url(../assets/logo_bg.png);
   mask-repeat: no-repeat;
   mask-size: auto 100%;
-}
-.heading-container {
-  /* border: 2px solid greenyellow;
-  border-radius: 5px; */
 }
 .heading-container h1 {
   font-family: 'Nunito Bold';
   letter-spacing: .1em;
   text-align: center;
 }
-
 #flex-date-time-container {
   letter-spacing: .05em;
   text-align: right;
-  /* border: 2px solid greenyellow;
-  border-radius: 5px; */
   display: flex;
   align-items: center;
   justify-content: right;
 }
-
 aside {
   padding: 1em;
   background-color: rgba(0, 191, 255, 0.2);
   border: 1px solid #3399ff;
   border-radius: 3px;
 }
-
 main {
   padding: 1em;
   background-color: rgba(0, 191, 255, 0.1);
@@ -139,7 +110,6 @@ main h3, aside h3 {
 main section:nth-last-child(n+2) {
   margin-bottom: 3.5rem;
 }
-
 footer {
   padding: .5em;
   text-align: center;
@@ -147,14 +117,6 @@ footer {
   border: 1px solid #3399ff;
   border-radius: 3px;
 }
-
-/* TODO: work on wraping in header */
-/* 3. Create prod branch from main */
-/* 4. Remove comments in prod branch and commit again */
-/* 5. Push */
-/* 6. Research git landing page and set it to prod branch */
-/* --- Layout Media Querries --- */
-/* 2*2rem (body gaps) + 3*300px (grid-items) */
 @media (width < calc(4rem + 900px)) {
   main {
     grid-column: span 3;
@@ -176,24 +138,11 @@ footer {
     grid-column: span 4;
   }
 }
-/* 2*2rem (body gaps) + 2*200px (grid-items) */
 @media (width < calc(4rem + 400px)) {
-  .grid-container-col-3 {
-    grid-template-columns: minmax(200px, 1fr);
-  }
-  .logo-container {
-    grid-column: span 1;
-  }
-  .logo-mask {
-    left: 25%;
-  }
-  .logo-text {
-    left: 28%;
-  }
-  .heading-container h1 {
-    text-align: center;
-  }
-  #flex-date-time-container {
-    grid-column: span 1;
-  }
+  .grid-container-col-3 {grid-template-columns: minmax(200px, 1fr);}
+  .logo-container {grid-column: span 1;}
+  .logo-mask {left: 25%;}
+  .logo-text {left: 28%;}
+  .heading-container h1 {text-align: center;}
+  #flex-date-time-container {grid-column: span 1;}
 }
