@@ -1,0 +1,88 @@
+* {
+    font-family: 'Arial', sans-serif;
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    
+    /* border-style: solid; */
+    /* border-width: 2px; */
+    /* border-color: red; */
+  }
+  
+  /* :root {
+    --headerElemSize: 25%;
+  } */
+  
+  body {
+    font-size: 1rem;
+  }
+  
+  header {
+    /* display: flex;
+    justify-content: space-between; */
+  }
+  
+  #logoContainer {
+    width: 25%;
+    position: relative;
+  }
+  .logoMask {
+    /* height: 100%; */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+
+    /* background: linear-gradient(to top, #0000ff, #3399ff, #33ccff, #33ffcc);
+    mask-image: url(../assets/logo_bg.png);
+    mask-repeat: no-repeat;
+    mask-size: 100%; */
+  }
+  
+  #headingContainer {
+    /* color: #989998;
+    width: var(--headerElemSize); */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  }
+  #headingContainer h1 {
+    /* font-size: 1.64vw; */
+    /* font-weight: lighter; */
+    /* letter-spacing: 0.4vw; */
+    /* text-align: center; */
+  }
+  
+  #dateTimeContainer {
+    /* color: #989998; */
+    /* width: var(--headerElemSize);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  }
+  #dateTimeContainer div:first-child {
+    /* font-size: 1.47vw; */
+    /* text-align: right; */
+  }
+  #dateTimeContainer div:nth-child(2) {
+    /* font-size: 3.6vw; */
+    /* text-align: right; */
+  }
+  #dateTimeContainer div:last-child {
+    /* color: white; */
+    /* font-size: 1.47vw; */
+    /* text-align: right; */
+  }
+  
+  
+  
+  
+  /* boddaaa! */
+  /* body {border: 4px solid orange;}
+  header {border: 4px solid green; }
+  #logoContainer {border: 4px solid red;}
+  #headingContainer {border: 4px solid blue;}
+  #headingContainer h1 {border: 4px solid yellowgreen;}
+  #dateTimeContainer {border: 4px solid red;}
+  #dateTimeContainer div:first-child {border: 4px solid blue;}
+  #dateTimeContainer div:nth-child(2) {border: 4px solid blueviolet;}
+  #dateTimeContainer div:last-child {border: 4px solid yellowgreen;} */
+  
