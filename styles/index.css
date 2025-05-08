@@ -21,6 +21,15 @@
 }
 * { font-family: 'Nunito Light', sans-serif; }
 html { font-size: 62.5%; }
+
+a {
+  color: rgb(0, 191, 255);
+  text-decoration: none;
+}
+a:hover {
+  color: #3399ff;
+}
+
 body {
   font-size: 1.6rem;
   margin: 0 auto;
