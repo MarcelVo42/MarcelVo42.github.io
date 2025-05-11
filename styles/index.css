@@ -60,7 +60,7 @@ ul > li::marker { font-size: 1.2em; }
 .grid-container-col-4 {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-col-span-4 { grid-column: span 4; }
 .logo-container {
@@ -99,6 +99,10 @@ ul > li::marker { font-size: 1.2em; }
   align-items: center;
   justify-content: right;
 }
+
+.main-fluid-layout-anim {
+  transition: grid-template-columns .3s ease-in-out;
+}
 aside {
   padding: 1em;
   background-color: rgba(0, 191, 255, 0.2);
@@ -127,9 +131,12 @@ footer {
   border-radius: 3px;
 }
 @media (width < calc(4rem + 900px)) {
-  main {
-    grid-column: span 3;
+  .main-fluid-layout-anim {
+    gap: 0rem;
+    grid-template-columns: 1fr 2fr 1fr 0fr;
   }
+  .main-fluid-layout-anim > aside { margin-right: 1rem; }
+  .main-fluid-layout-anim > main { margin-left: 1rem; }
 }
 @media (width < calc(4rem + 600px)) {
   .grid-container-col-3 {
@@ -146,6 +153,11 @@ footer {
   aside, main {
     grid-column: span 4;
   }
+  .main-fluid-layout-anim {
+    gap: 2rem;
+  }
+  .main-fluid-layout-anim > aside { margin-right: 0; }
+  .main-fluid-layout-anim > main { margin-left: 0; }
 }
 @media (width < calc(4rem + 400px)) {
   .grid-container-col-3 {grid-template-columns: minmax(200px, 1fr);}
