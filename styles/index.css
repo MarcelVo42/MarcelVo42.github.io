@@ -20,8 +20,26 @@
   url(../fonts/Nunito-BoldItalic.ttf) format('truetype');
 }
 * { font-family: 'Nunito Light', sans-serif; }
-html { font-size: 62.5%; }
-
+:root {
+  --base: #ffffff;
+  --text: black;
+  font-size: 62.5%;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+      --base: #212020;
+      --text: #ffffff;
+  }
+}
+html { color-scheme: dark light; }
+body {
+  background-color: var(--base);
+  color: var(--text);
+  font-size: 1.6rem;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 2rem;
+}
 a {
   color: rgb(0, 191, 255);
   text-decoration: none;
@@ -29,30 +47,11 @@ a {
 a:hover {
   color: #3399ff;
 }
-
-body {
-  font-size: 1.6rem;
-  margin: 0 auto;
-  padding: 2rem;
-  max-width: 1600px;
-}
 ul {
   padding-left: 1em;
   list-style: circle;
 }
 ul > li::marker { font-size: 1.2em; }
-@media (prefers-color-scheme: light) {
-  body {
-      background-color: white;
-      color: black;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: #212020;
-      color: white;
-  }
-}
 .grid-container-col-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
@@ -99,7 +98,6 @@ ul > li::marker { font-size: 1.2em; }
   align-items: center;
   justify-content: right;
 }
-
 .main-fluid-layout-anim {
   transition: grid-template-columns .3s ease-in-out;
 }
