@@ -105,13 +105,13 @@ aside {
   padding: 1em;
   background-color: rgba(0, 191, 255, 0.2);
   border: 1px solid #3399ff;
-  border-radius: 3px;
+  border-radius: 24px;
 }
 main {
   padding: 1em;
   background-color: rgba(0, 191, 255, 0.1);
   border: 1px solid #3399ff;
-  border-radius: 3px;
+  border-radius: 24px;
   grid-column: span 2;
 }
 main h3, aside h3 {
@@ -126,7 +126,7 @@ footer {
   text-align: center;
   background-color: rgba(0, 191, 255, 0.2);
   border: 1px solid #3399ff;
-  border-radius: 3px;
+  border-radius: 24px;
 }
 @media (width < calc(4rem + 900px)) {
   .main-fluid-layout-anim {
